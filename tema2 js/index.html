@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #e2e8f0;
+            }
+            .exercise-container {
+            border: 3px solid #475569;
+            background-color: #ffffff;
+            margin-bottom: 60px;
+            padding: 10px;
+            min-height: 150px;
+
+            }
+            .fixed-ex-height { height: 500px; }
+            .box {
+            background-color: #3b82f6;
+            color: white;
+            padding: 15px;
+            border: 2px solid #1d4ed8;
+            margin: 5px;
+            min-width: 100px;
+            }
+            .fixed-box {
+            background-color: #10b981;
+            color: white;
+            padding: 15px;
+            border: 2px solid #047857;
+            margin: 5px;
+            width: 100px;
+            text-align: center;
+            }
+            .ex-4-label { font-size: 16px; }
+            .ex-4-input { font-size: 24px; padding: 20px; background-color:
+            #cbd5e1; border: 2px solid #94a3b8; }
+            .ex-8-sidebar { flex-basis: 150px; flex-shrink: 0; background-color:
+            #f59e0b; }
+            .ex-8-content { flex-grow: 1; background-color: #cbd5e1; color:
+            #0f172a; }
+
+            #ex-1{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;
+                
+            }
+
+            #ex-2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                width: fit-content;    
+                height: fit-content;
+            }
+
+            #ex-3{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-align: center;
+                align-items: center;
+            }
+
+            #ex-4{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                
+            }
+            #ex-5{
+                display :flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+            }
+            #ex-6{
+                display:flex;
+                flex-direction: column;
+                align-content: flex-end;
+                align-items:flex-end;
+            }
+            #ex-7{
+                display:flex;
+             
+            }
+            #ex-8{
+                display: flex;
+                flex-wrap: wrap-reverse;
+                align-content: space-between;
+            }
+            #ex-9{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-evenly,center;
+                justify-content: flex-start;
+            }
+    </style>
+</head>
+<body>
+    <div id="ex-1" class="exercise-container">
+        <div class="box">Step 1</div>
+        <div class="box">Step 2</div>
+        <div class="box">Step 3</div>
+    </div>
+
+    <div id="ex-2" class="exercise-container fixed-ex-height">
+        <div class="box">Button One</div>
+        <div class="box">Button Two</div>
+        <div class="box">Button Three</div>
+    </div>
+
+    <div id="ex-3" class="exercise-container">
+        <div class="box">Home</div>
+        <div class="box">About Us</div>
+        <div class="box">Services</div>
+        <div class="box">Contact</div>
+    </div>
+
+    <div id="ex-4" class="exercise-container">
+        <div class="fixed-box">Item 1</div>
+        <div class="fixed-box">Item 2</div>
+        <div class="fixed-box">Item 3</div>
+        <div class="fixed-box">Item 4</div>
+        <div class="fixed-box">Item 5</div>
+        <div class="fixed-box">Item 6</div>
+        <div class="fixed-box">Item 7</div>
+    </div>
+
+    <div id="ex-5" class="exercise-container fixed-ex-height">
+        <div class="fixed-box">Widget 1</div>
+        <div class="fixed-box">Widget 2</div>
+        <div class="fixed-box">Widget 3</div>
+        <div class="fixed-box">Widget 4</div>
+        <div class="fixed-box">Widget 5</div>
+        <div class="fixed-box">Widget 6</div>
+        <div class="fixed-box">Widget 7</div>
+        <div class="fixed-box">Widget 8</div>
+    </div>
+
+    <div id="ex-6" class="exercise-container">
+        <div class="box">Profile</div>
+        <div class="box">Settings</div>
+        <div class="box">Logout</div>
+    </div>
+
+    <div id="ex-7" class="exercise-container">
+        <div class="box ex-8-sidebar">Short Sidebar</div>
+        <div class="box ex-8-content">
+        Main content area.<br><br>
+        It has multiple lines of text.<br><br>
+        This makes it naturally taller than the sidebar.
+    </div>
+    </div>
+
+    <div id="ex-8" class="exercise-container fixed-ex-height">
+        <div class="fixed-box">1</div>
+        <div class="fixed-box">2</div>
+        <div class="fixed-box">3</div>
+        <div class="fixed-box">4</div>
+        <div class="fixed-box">5</div>
+        <div class="fixed-box">6</div>
+        <div class="fixed-box">7</div>
+    </div>
+
+    <div id="ex-9" class="exercise-container fixed-ex-height">
+        <div class="fixed-box">Img 1</div>
+        <div class="fixed-box">Img 2</div>
+        <div class="fixed-box">Img 3</div>
+        <div class="fixed-box">Img 4</div>
+        <div class="fixed-box">Img 5</div>
+    </div>
+</body>
+</html>
